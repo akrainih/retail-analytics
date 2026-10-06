@@ -25,7 +25,24 @@ RFM-анализ интернет-магазина
 - **Разница monetary между сегментами статистически значима** 
   (Mann-Whitney U, p = 2.64e-32).
 
+## Ход работы
 
-  ## Дашборд
+1. **Очистка данных** (Python, pandas):
+   - Удалила отмены (Invoice с 'C') и возвраты
+   - Разделила на 2 витрины: с Customer ID и без
+   - Обработала 243k пропусков Customer ID
 
-![RFM Dashboard](dashboard/dashboard_screenshot.png)
+2. **SQL-витрины** (PostgreSQL):
+   - Создала v_rfm с расчётом R, F, M
+   - Написала 15+ запросов: JOIN, CTE, оконные функции
+
+3. **RFM-сегментация**:
+   - 5 878 клиентов разделены на 6 сегментов
+   - Champions, Loyal, New, At Risk, Lost, Others
+
+4. **Статистические тесты** (scipy):
+   - Shapiro-Wilk: данные не нормальны
+   - Mann-Whitney U: p = 2.64e-32
+
+5. **Дашборд** (Tableau Public):
+   - 2 страницы: обзор, RFM
