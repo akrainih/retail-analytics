@@ -32,12 +32,13 @@ RFM-анализ интернет-магазина
    - Удалила отмены (Invoice с 'C') и возвраты
    - Разделила на 2 витрины: с Customer ID и без
    - Обработала 243k пропусков Customer ID
-[Ноутбук](https://github.com/akrainih/retail-analytics/blob/033b7a3a0cb333f7b6ee7ba6174194bc5526ff91/online-retail.ipynb)
+- [Ноутбук](https://github.com/akrainih/retail-analytics/blob/033b7a3a0cb333f7b6ee7ba6174194bc5526ff91/online-retail.ipynb)
 
 2. **SQL-витрины** (PostgreSQL):
    - Создала v_rfm с расчётом R, F, M
    - Написала 15+ запросов
    - Использовала результаты запросов для создания дашбордов
+- [sql запросы](https://github.com/akrainih/retail-analytics/blob/a1db5852b16a5a3083f133eaee27997e3ccee4ef/sql_rfm_queries.sql)
 
 3. **RFM-сегментация**:
    - 5 878 клиентов разделены на 6 сегментов
