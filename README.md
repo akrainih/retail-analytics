@@ -32,6 +32,7 @@ RFM-анализ интернет-магазина
    - Удалила отмены (Invoice с 'C') и возвраты
    - Разделила на 2 витрины: с Customer ID и без
    - Обработала 243k пропусков Customer ID
+[Ноутбук](https://github.com/akrainih/retail-analytics/blob/033b7a3a0cb333f7b6ee7ba6174194bc5526ff91/online-retail.ipynb)
 
 2. **SQL-витрины** (PostgreSQL):
    - Создала v_rfm с расчётом R, F, M
