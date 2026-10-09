@@ -45,4 +45,4 @@ RFM-анализ интернет-магазина
    - Champions, Loyal, New, At Risk, Lost, Others
 
 4. **Дашборд** (Tableau Public):
-   - 2 страницы: обзор, RFM
+   - по результатам RFM сегментации
